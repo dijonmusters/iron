@@ -20,7 +20,7 @@ export default function Home() {
   const daysSinceOriginalIronDay = Math.round(
     Math.abs((originalIronDay - today) / oneDay)
   );
-  const isIronDay = daysSinceOriginalIronDay % 2 == 0;
+  const isIronDay = daysSinceOriginalIronDay % 3 == 0;
 
   return (
     <main className={`${inter.className} ${styles.main}`}>
